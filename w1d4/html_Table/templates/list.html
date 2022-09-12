@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <table class="table table-dark table-striped" style="width:500px; margin-left: auto;margin-right: auto;text-align: center;">
+        <thead style="color:darkgoldenrod">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Full Name</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{user_list[0]["first_name"]}}</td>
+                <td>{{user_list[0]["last_name"]}}</td>
+                <td>{{user_list[0]["first_name"]}} {{user_list[0]["last_name"]}}</td>
+            </tr>
+            <tr>
+                <td>{{user_list[1]["first_name"]}}</td>
+                <td>{{user_list[1]["last_name"]}}</td>
+                <td>{{user_list[1]["first_name"]}} {{user_list[1]["last_name"]}}</td>
+            </tr>
+            <tr>
+                <td>{{user_list[2]["first_name"]}}</td>
+                <td>{{user_list[2]["last_name"]}}</td>
+                <td>{{user_list[2]["first_name"]}} {{user_list[2]["last_name"]}}</td>
+            </tr>
+            <tr>
+                <td>{{user_list[3]["first_name"]}}</td>
+                <td>{{user_list[3]["last_name"]}}</td>
+                <td>{{user_list[3]["first_name"]}} {{user_list[3]["last_name"]}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

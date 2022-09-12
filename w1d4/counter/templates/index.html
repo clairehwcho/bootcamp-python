@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+
+
+<body>
+    <div class="wrapper" style="display: flex;flex-direction:column;align-items: center;">
+        <h1>Counter</h1>
+        <p> {{ session['count'] }} </p>
+
+        <div style="width:150px;display:flex;justify-content: space-between;margin: 30px;gap:20px;">
+            <form method="post" action="/count_session">
+                <input type="submit" name="btn" value="Add 1">
+            </form>
+
+            <form method="post" action="/count_session">
+                <input type="submit" name="btn" value="Add 2">
+            </form>
+
+            <form action="/destroy_session">
+                <input type="submit" name="btn" value="Reset">
+            </form>
+
+        </div>
+    </div>
+</body>
+
+
+</html>

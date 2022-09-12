@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="surveyform">
+            <h3 style="text-decoration:underline;">Submitted Info</h3>
+            <div class="row" style="display:flex;">
+                <p class="label">Name:</p>
+                <p class="inputbox">{{ dojo.name }}</p>
+            </div>
+            <div class="row" style="display:flex;">
+                <p class="label">Dojo Location:</p>
+                <p class="inputbox">{{ dojo.location }}</p>
+            </div>
+            <div class="row" style="display:flex;">
+                <p class="label">Favorite Language:</p>
+                <p class="inputbox">{{ dojo.language }}</p>
+            </div>
+            <div class="row" style="display:flex;">
+                <p class="label">Comment:</p>
+                <p class="inputbox">{{ dojo.comment }}</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
