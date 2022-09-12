@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Author Show</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <div class="all_list_left">
+            <h1>someone's favorites</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Number of pages</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for book in all_books %}
+                    <tr>
+                        <td>{{ book.title }}</td>
+                        <td>{{ book.num_of_pages }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <div class="all_list_right">
+            <h1>Add Author's Favorite</h1>
+            <form action="/add_authors_favorite" method="post">
+                <label for="book">Book: </label>
+                <select name="favorite" id="">
+                    {% for book in all_authors_favorites %}
+                    <option value={{book.id}}>{{ book.title }}</option>
+                    {% endfor %}
+                </select>
+                <input type="text" name="name">
+                <p><input type="submit" value="Create"></p>
+            </form>
+            <p><a href="/">HOME</a></p>
+        </div>
+    </div>
+</body>
+
+
+</html>

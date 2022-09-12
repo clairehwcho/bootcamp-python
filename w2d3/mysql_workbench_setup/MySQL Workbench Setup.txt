@@ -1,0 +1,8 @@
+SELECT name FROM names;
+
+INSERT INTO names(name)
+VALUES('Claire'), ('John');
+
+UPDATE names SET name = 'Smith' WHERE id = 2;
+
+DELETE FROM names WHERE id = 3;

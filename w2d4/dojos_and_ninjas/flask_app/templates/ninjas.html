@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Ninja</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <div class="new_ninja_box">
+            <h1>New Ninja</h1>
+            <form action="/add_ninja" method="post">
+                <div class="row">
+                    <div class="row_innerbox">
+                        <label for="dojo_id">Dojo:</label>
+                    </div>
+                    <div class="row_innerbox">
+                        <select class="input_box" name="dojo_id">
+                            {% for dojo in all_dojos %}
+                            <option value= {{dojo.id}} > {{dojo.name}} </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row_innerbox">
+                        <label class="label_box" for="first_name">First Name:</label>
+                    </div>
+                    <div class="row_innerbox">
+                        <input class="input_box" type="text" name="first_name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row_innerbox">
+                        <label class="label_box" for="last_name">Last Name:</label>
+                    </div>
+                    <div class="row_innerbox">
+                        <input class="input_box" type="text" name="last_name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row_innerbox">
+                        <label class="label_box" for="age">Age:</label>
+                    </div>
+                    <div class="row_innerbox">
+                        <input class="input_box" type="text" name="age">
+                    </div>
+                </div>
+                <p><input type="submit" value="Create"></p>
+            </form>
+            <p><a href="/">HOME</a></p>
+        </div>
+
+</body>
+
+
+</html>

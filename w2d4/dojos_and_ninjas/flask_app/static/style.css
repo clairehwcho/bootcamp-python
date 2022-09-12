@@ -1,0 +1,79 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.dojos_left{
+    width: 300px;
+    background-color:burlywood;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 40px;
+}
+
+.dojos_right{
+    width: 300px;
+    background-color:burlywood;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 40px;
+}
+
+.new_ninja_box {
+    width: 300px;
+    background-color:burlywood;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 40px;
+}
+
+.row {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row_innerbox{
+    width: 140px;
+    text-align: left;
+}
+
+.input_box {
+    width: 130px;
+}
+
+.dojo_show_box{
+    width: 300px;
+    background-color:burlywood;
+    padding: 30px;
+    line-height: 40px;
+}
+
+.dojo_show_box table {
+    width: 300px;
+    border: 1px solid black;
+}
+
+.dojo_show_box thead {
+    background-color: mediumpurple;
+}
